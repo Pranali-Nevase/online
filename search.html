@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+form.example input[type=text]{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width:40%;
+    background: #f1f1f1;
+  }
+ form.example button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: rgba(60, 159, 162, 0.353);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+    </style>
+</head>
+<body>
+    <div class="writenav">
+        <form class="example">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+            </button>
+        </div>
+</body>
+</html>

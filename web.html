@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+         *{
+            box-sizing: border-box;
+        }
+        body {
+          background-image: url('shop.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center ;
+        }
+        .box{
+            width: 420px;
+            background: transparent;
+            border: 2px solid #49382c;
+            backdrop-filter:blur(40px) ;
+            box-shadow: 0 0 10px rgba(0, 0,0,.1) ;
+            color:#49382c;
+            border-radius: 10px;
+            padding:30px 40px;
+        }
+        .box h1{
+            font-size: 36px;
+            text-align: center;
+        }
+        .box .boxcont{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+        .boxcont input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border:2px solid rgba(255, 255, 255, 0.456);
+            border-radius: 40px;
+            font-size: 16px;
+            color:#49382c;
+            padding: 20px 45px 20px 20px;
+        }
+        .boxcont input::placeholder{
+            color:#49382c;
+        }
+        .boxcont i{
+            position: absolute;
+            right:20px;
+            top: 50%;
+            transform: translateY(50%);
+            font-size: 20px;
+        }
+        .box .forgot{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: 18px 0 15px;
+        }
+        .forgot label input{
+            accent-color:#49382c;
+            margin-right: 3px;
+        }
+        .forgot a{
+            color:#49382c;
+            text-decoration: none;
+        }
+        .forgot a:hover{
+            text-decoration: underline;
+        }
+        .box .btn{
+             width: 100%;
+             height: 45px;
+             background:#fff;
+             border:none;
+             outline: none;
+             border-radius: 40px; 
+             box-shadow: 0 0 10px rgba(0, 0,0,.2) ;
+             cursor: pointer;
+             font-size: 16px;
+             color: #49382c;
+             font-weight: 600;
+             font-size: large;
+        }
+        .box .link{
+            font-size: 14.5px;
+            text-align: center;
+            margin-top: 20px 0 15px; 
+        }
+        .link a{
+            color:#49382c;
+            text-decoration:none;
+            font-weight: 600;
+        }
+        .link p a:hover{
+            text-decoration: underline;
+
+        }    </style>
+
+</head>
+<body background="shop.jpg" cover>
+    
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <div class="logo"><a href="home.html"><img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_640.jpg" alt="logo" ></a></div>
+            <li class="dropdown"><a href="home.html" >Home
+                <ul class="d-content">
+                    <a href="women.html">Women</a>
+                    <a href="men.html">Men</a>
+                    <a href="kids.html">Kids</a>
+                </ul>   
+            </a>
+        </li>
+        
+        <li><a href="about.html">About</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+    <div class="main">
+        <div class="box">
+            <form action="home.html">
+                <h1>Login</h1>
+                <div class="boxcont">
+                    Username:
+                    <input type="text" placeholder="Username">
+                    <i class='bx bxs-user'></i>
+            </div>
+            <div class="boxcont">
+                Email:
+                <input type="email" placeholder="mail@email.com">
+            </div>
+
+            <div class="boxcont">
+                Password:
+                <input type="text" placeholder="Password"><br>
+                <i class='bx bxs-hide'></i>
+            </div>
+            <div class="forgot">
+                <label> <input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button  type="submit" class="btn"> Login</button>
+            <div class="re-link">
+                <p>Don't have an account? <a href="#">register</a> </p>
+            </div>
+            </form>
+        </div>
+    </div>
+    </body>
+    
+</html>
